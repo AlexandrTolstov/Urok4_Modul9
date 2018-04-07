@@ -9,9 +9,23 @@
 
 #include "Sort.h"
 #include "GenMass.h"
+#include "WorkWithStudent.h"
+
 
 using namespace std;
 
+struct Subject
+{
+	char *NameSubject;
+	int bal;
+
+};
+struct Student
+{
+	char *fName;
+	char *group;
+	Subject *subject;
+};
 
 void main() {
 
@@ -288,6 +302,14 @@ void main() {
 			}
 			printf("\n");
 		}
+	}
+	else if (N1 == 6)
+	{
+		Student st;
+		st.fName = (char*)malloc(30 * sizeof(char));
+		printf("Enter name: ");
+
+
 	}
 	system("pause");
 }
