@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <iostream>
+
 using namespace std;
 
 void GenMass(int *mass, int Razm) {
@@ -245,3 +246,30 @@ void SumMaxMin(int **mass, int Str, int Col, int *MaxMass)
 		cout << *(MaxMass + i) << endl;
 	}
 }
+
+//void MassRazlChisla(int *&RazlCh, int *N, int *&mass, int Str, int Col)
+//{
+//	int Ind = 0;
+//	printf("\nРазличные чисела в матрице:\n");
+//
+//	for (int i = 0; i < Str; i++)
+//	{
+//		for (int j = 0; j < Col; j++)
+//		{
+//			for (int z = 0; z <= *N; z++)
+//			{
+//				if (*(&RazlCh + z) == *(&mass + i*Col + j))
+//				{
+//					Ind = 1;
+//				}
+//			}
+//			if (Ind == 0)
+//			{
+//				RazlCh = (int *)realloc(RazlCh, (*N + 1) * sizeof(int));
+//				*(RazlCh + *N) = *(mass + i*Col + j);
+//				*N++;
+//			}
+//			Ind = 0;
+//		}
+//	}
+//}
